@@ -145,7 +145,7 @@ export class PoseNet {
 
     const {heatmapScores, offsets} = tf.tidy(() => {
       const inputTensor = toResizedInputTensor(
-          input, resizedHeight, resizedWidth, flipHorizontal);
+          input, resizedWidth, resizedHeight, flipHorizontal);
 
       return this.predictForSinglePose(inputTensor, outputStride);
     });

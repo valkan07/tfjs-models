@@ -158,7 +158,7 @@ export class PoseNet {
     heatmapScores.dispose();
     offsets.dispose();
 
-    return scalePose(pose, scaleY, scaleX);
+    return scalePose(pose, scaleX, scaleY);
   }
 
   /**
